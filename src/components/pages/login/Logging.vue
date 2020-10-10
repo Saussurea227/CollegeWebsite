@@ -38,6 +38,9 @@
             >重置</el-button
           >
         </el-form-item>
+        <div @click="register" class="regist">
+          立即注册
+        </div>
       </el-form>
     </div>
   </form-bar>
@@ -109,11 +112,14 @@ export default {
             // this.noticeMessage = res;
             if (res.status != 200) return this.$message.error("登录失败！");
             this.$message.success("登录成功");
-            // window.sessionStorage.setItem('token',res.data.token);
+
             this.$router.push({ path: "/CollegeNews/学院新闻" });
           });
       });
     },
+      register(){
+        this.$router.push({ path: "/register" });
+      }
   },
 };
 </script>
@@ -128,16 +134,25 @@ export default {
   color: #1d4b8f;
   font-weight: bold;
 }
+.btn{
+  margin-top: 50px;
+  display: flex;
+   justify-content: space-around;
 
-.btn1 {
-  display: flex;
-  justify-content: flex-end;
-  margin: 5px 150px;
 }
-.btn2 {
-  display: flex;
-  justify-content: flex-end;
-  margin: 30px 90px;
+.btn1 {
+
+margin-right: 90px;
+
+}
+.regist{
+
+  font-size: 17px;
+  font-family: "宋体";
+  color: #1d4b8f;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
 }
 
 .login-form {

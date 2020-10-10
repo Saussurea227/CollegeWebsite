@@ -8,7 +8,7 @@
         @click="addpicture"
         >添加</el-button
       > -->
-      　<el-button
+      <el-button
         class="fileParent"
         type="success"
         icon="el-icon-plus"
@@ -32,7 +32,7 @@
       <el-table-column align="center" label="序号" width="155">
         <template slot-scope="scope">
           <!-- /cuo {{scope.$index+1}} -->
-          {{ scope.row.id }}
+          {{ scope.row.id  }}
         </template>
       </el-table-column>
       <el-table-column align="center" label="类型" width="800">

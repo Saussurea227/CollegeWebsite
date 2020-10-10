@@ -22,6 +22,7 @@
         </el-form-item>
 
         <el-form-item align="center">
+          
           <el-col>
             <el-button type="primary" size="small" @click="submit">发表</el-button>
           </el-col>

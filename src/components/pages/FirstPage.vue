@@ -10,7 +10,7 @@ export default {
   methods: {
     clickme: function () {
       // this.$router.push("/AdminPage");
-      this.$router.push("/SlideShowadmin0"); //上传图片
+      this.$router.push("/SuperAdminPage"); //上传图片
       // this.$router.push("/AcademyState");
     },
   },
